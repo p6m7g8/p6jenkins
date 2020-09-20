@@ -40,7 +40,7 @@ p6_jenkins_prompt_info() {
     local str
 
     if ! p6_string_blank "$JENKINS_URL"; then
-        str="jenkins: $JENKINS_URL ($JENKINS_USER_ID)"
+        str="jenkins:  $JENKINS_URL ($JENKINS_USER_ID)"
     fi
 
     if p6_string_blank "$str"; then
