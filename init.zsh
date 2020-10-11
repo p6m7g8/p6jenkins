@@ -14,7 +14,11 @@ p6df::modules::p6jenkins::version() { echo "0.0.1"; }
 #
 #>
 ######################################################################
-p6df::modules::p6jenkins::deps() { ModuleDeps=() }
+p6df::modules::p6jenkins::deps() {
+    ModuleDeps=(
+        p6m7g8/p6common
+    )
+}
 
 ######################################################################
 #<
