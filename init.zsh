@@ -76,7 +76,7 @@ p6_jenkins_jobs_list() {
 # Function: p6_jenkins_job_get(job_name)
 #
 #  Args:
-#	job_name - 
+#	job_name -
 #
 #>
 ######################################################################
@@ -92,7 +92,7 @@ p6_jenkins_job_get() {
 # Function: p6_jenkins_job_build(job_name)
 #
 #  Args:
-#	job_name - 
+#	job_name -
 #
 #>
 ######################################################################
@@ -108,7 +108,7 @@ p6_jenkins_job_build() {
 # Function: p6_jenkins_job_tail(job_name)
 #
 #  Args:
-#	job_name - 
+#	job_name -
 #
 #>
 ######################################################################
