@@ -1,4 +1,3 @@
-
 ######################################################################
 #<
 #
@@ -19,7 +18,7 @@ p6df::modules::p6jenkins::deps() {
 #
 #>
 ######################################################################
-p6df::modules::p6jenkins::init() { }
+p6df::modules::p6jenkins::init() {; }
 
 ######################################################################
 #<
@@ -67,53 +66,59 @@ p6_jenkins_cli_wrapper() {
 ######################################################################
 p6_jenkins_jobs_list() {
 
-    p6_jenkins_cli_wrapper list-jobs
+    p6_jenkins_cli_wrapper list-jobs "$@"
 }
 
 ######################################################################
 #<
 #
-# Function: p6_jenkins_job_get(job_name)
+# Function: p6_jenkins_job_get(job_name, ...)
 #
 #  Args:
 #	job_name -
+#	... - 
 #
 #>
 ######################################################################
 p6_jenkins_job_get() {
     local job_name="$1"
+    shift 1
 
-    p6_jenkins_cli_wrapper get-job $job_name
+    p6_jenkins_cli_wrapper get-job $job_name "$@"
 }
 
 ######################################################################
 #<
 #
-# Function: p6_jenkins_job_build(job_name)
+# Function: p6_jenkins_job_build(job_name, ...)
 #
 #  Args:
 #	job_name -
+#	... - 
 #
 #>
 ######################################################################
 p6_jenkins_job_build() {
     local job_name="$1"
+    shift 1
 
-    p6_jenkins_cli_wrapper build $job_name
+    p6_jenkins_cli_wrapper build $job_name "$@"
 }
 
 ######################################################################
 #<
 #
-# Function: p6_jenkins_job_tail(job_name)
+# Function: p6_jenkins_job_tail(job_name, ...)
 #
 #  Args:
 #	job_name -
+#	... - 
 #
 #>
 ######################################################################
 p6_jenkins_job_tail() {
     local job_name="$1"
+    shift 1
 
-    p6_jenkins_cli_wrapper console $job_name -f
+    p6_jenkins_cli_wrapper console $job_name "$@"
 }
