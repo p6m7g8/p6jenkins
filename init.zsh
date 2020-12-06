@@ -23,7 +23,7 @@ p6df::modules::p6jenkins::init() {; }
 ######################################################################
 #<
 #
-# Function: p6_jenkins_prompt_info()
+# Function: str str = p6_jenkins_prompt_info()
 #
 #  Returns:
 #	str - str
@@ -34,14 +34,11 @@ p6_jenkins_prompt_info() {
 
     local str
 
-    if ! p6_string_blank "$JENKINS_URL"; then
+    if p6_file_exists "Jenkinsfile"; then
         str="jenkins:  $JENKINS_URL ($JENKINS_USER_ID)"
-    fi
-
-    if p6_string_blank "$str"; then
-        p6_return_void
-    else
         p6_return_str "$str"
+    else
+	p6_return_void
     fi
 }
 
