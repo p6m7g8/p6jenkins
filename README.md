@@ -38,9 +38,11 @@
 
 - [Change Log](CHANGELOG.md)
 
-### Usage
+## Usage
 
-#### init.zsh:
+### p6jenkins:
+
+#### p6jenkins/init.zsh:
 
 - p6_jenkins_cli_wrapper()
 - p6_jenkins_job_build(job_name, ...)
