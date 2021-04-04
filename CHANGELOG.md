@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/p6m7g8/p6jenkins/compare/v2.1.0...v2.1.1) (2021-04-04)
+
+
+* **link:** remove rendundant symlinks; echo for now ([#14](https://github.com/p6m7g8/p6jenkins/issues/14)) ([2741e59](https://github.com/p6m7g8/p6jenkins/commit/2741e596694e544606b2410324d198f2466ae2d5))
+* **README:** updates generator ([#13](https://github.com/p6m7g8/p6jenkins/issues/13)) ([2ba2be6](https://github.com/p6m7g8/p6jenkins/commit/2ba2be6fb417ecdafaf6aecac1d0fd906eec436e))
+* Coc -> .github ([72b53dc](https://github.com/p6m7g8/p6jenkins/commit/72b53dc0313d86661b05e449e46439da3ee58d42))
+
 ## [2.1.0](https://github.com/p6m7g8/p6jenkins/compare/v2.0.0...v2.1.0) (2020-12-06)
 
 
